@@ -1,0 +1,12 @@
+2023-11-29 22:18:42,671 - Error processing app.log: [Errno 2] No such file or directory: '/Users/root/Downloads/major_project/test/app.log'
+Traceback (most recent call last):
+  File "/Users/cyrilkevin195/Downloads/major_project/app.py", line 33, in on_created
+    result = util.classify_waste(image_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cyrilkevin195/Downloads/major_project/util.py", line 15, in classify_waste
+    img = Image.open(img_path).show()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/PIL/Image.py", line 3243, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/root/Downloads/major_project/test/app.log'
